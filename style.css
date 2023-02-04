@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sofia+Sans:ital,wght@0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,200;1,100&display=swap');
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+a {
+    text-decoration: none;
+    color: rgb(245, 241, 231);
+    transition: 0.4s;
+}
+a:hover {
+    font-size: 1.2rem;
+}
+a:active {
+font-size: 0.8em;
+}
+/* a:visited {
+    color: rgb(165, 42, 93);
+} */
+.avatar {
+    width: 400px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+body {
+    font-family: 'raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: 200;
+    background-color: rgb(231, 231, 231);
+    color: rgb(37, 37, 37);
+    /* color:hsl(206deg 4% 64%); */
+    letter-spacing: 1px;
+}
+.container {
+    width: 850px;
+    /* min-width: 850px; */
+    margin: auto;
+    padding-top: 20px;
+}
+
+#title {
+    color: hsl(27, 52%, 28%);
+    /* font-size: 300; */
+    /* font-weight: 900; */
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+.card {
+    color: rgb(235, 231, 224);
+    padding: 5px  23px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 4px 4px 13px 3px rgba(0, 0, 0, 0.25); */
+    margin-bottom: 15px;  
+}
+.info {
+    color:rgb(150, 154, 157);
+    /* color: red; */
+    background: hsl(210deg 15% 89%);
+    display: flex;
+    padding: 25px;
+}
+
+@media (max-width: 500px) {
+    .info {
+        color: rgb(150, 154, 157);
+        /* color: red; */
+        background: hsl(210deg 15% 89%);
+        display: block;
+        padding: 25px;
+        text-align: center;
+    }
+    #title4 {
+        text-align: center;
+    }
+    .h3 {
+        text-align: center;
+    }
+    /* .tasks .h3 {
+        text-align: center;
+    } */
+    /* .promo .h3 {
+        text-align: center;
+    } */
+
+    .promo ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 100px;
+    } 
+
+    .container {
+        min-width: 360px;
+        max-width: 375px;
+        padding-top: 5px;
+        /* font-size: 1.1rem; */
+    }
+    .avatar {
+        width: 320px;
+        box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    .text {
+        border-left: #ccc;
+    }
+}
+.info-box {
+    margin-left: 25px;
+    /* display: inline-block; */
+}
+
+.text {
+    border-left: 5px solid rgba(140, 128, 128, 0.8);
+    padding-left: 15px;
+    /* padding-top: 20px; */
+    /* margin-left: 40px; */
+    margin: 15px 0;
+}
+.links {
+    margin-top: 35px;
+    color: rgb(138, 133, 133);
+    /* text-align: center; */
+    /* width:100%; */
+} 
+.links p {
+    margin: 0px;
+}
+/* .tasks:hover {
+    margin: 1.2em;
+} */
+.tasks {
+   background: rgb(163, 156, 149); 
+}
+.projects {
+    background: rgb(188, 155, 139); 
+    padding-bottom: 0;
+    padding: 5px 10px 0px 5px;
+}
+.projects h3 {
+    padding-left: 18px;
+    /* padding-bottom: 10px; */
+    /* width: 100%; */
+}
+.tablenames {
+    font-size: 13px;
+    color: rgb(227, 222, 214);
+    font-weight: 600;
+}
+
+
+.promo {
+    background: rgb(191, 183, 153); 
+}
+.form h4{
+    text-align: center;
+}
+.form {
+    /* width: 100%; */
+    color: rgb(79, 79, 79);
+    font-style: inherit;
+    /* padding: 17px; */
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+.form-row .form-group{
+    margin-right: 20px;
+    width: 50%;
+    /* display: inline-block; */
+    /* width: calc(50%-20px); */
+}
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 500px) {
+    .form-row {
+        margin-bottom: 10px;
+        display: block;
+        flex-direction: column;
+     
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+.form-group label{
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    padding-top: 5px;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+    font-family: inherit;
+    padding: 15px 0px 10px;
+    outline: none;
+}
+
+::placeholder {
+    opacity: 0.5;
+    font-weight: lighter;
+    font-family: 'raleway', sans-serif;
+}
+.btn-center {
+    padding:30px 0 20px;
+    text-align: center;
+}
+.btn {
+    width: 129px;
+    height: 20px;
+    background: rgba(191, 183, 153, .6); 
+    border: none;
+    color: rgb(79, 79, 79);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.15s;
+}
+.btn:hover {
+    width: 133px;
+    height: 25px;
+    /* font-size: 1em; */
+  /* font-weight: 550; */
+}
+hr { 
+    width: 500px;
+}
+h3 {
+    color: rgb(235, 229, 222);
+}
+.table {
+    padding: 0px 15px 8px 15px;
+}
+.table thead td {
+    background: rgb(195, 162, 146); 
+    padding: 10px;
+}
+.table tbody tr td{
+    padding-left: 8px;
+}
+
+/* .table td:nth-child(1) {
+    padding-bottom: 10px;
+} */
+.table td:nth-child(2) {
+    /* background: rgb(195, 162, 146);  */
+    padding-left: 10px;
+}
+.table td:nth-child(3) {
+    padding: 10px;
+}
+.table tr:hover {
+    background: rgb(195, 162, 146); 
+}
+/* .table tr:last-child {
+    padding-bottom: 10px;
+} */
+
+/* обьеденить фон у второго столбца */
+/* table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 0px;
+} */
+/* thead {
+    padding-left: 50px;
+} */
+
+
+/* .box {
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+    /* background: red; */
+
+/* .box:nth-child(3) {
+    width: 100%;
+    display: block;
+} */ 
+
